@@ -58,7 +58,7 @@
    <!-- packet-uploader to packet-validator Route -->
    <route id="packet-uploader-->packet-validator new route">
       <from uri="eventbus://packet-uploader-new-bus-out" />
-      <log message="packet-uploader-->packet-validator new route ${bodyAs(String)}" />
+      <log message="packet-uploader-->uin-generation new route ${bodyAs(String)}" />
       <choice>
          <when>
             <jsonpath>$.[?(@['isValid'] == false &amp;&amp; @['internalError'] == true)]</jsonpath>
