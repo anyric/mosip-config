@@ -55,10 +55,9 @@
          </otherwise>
       </choice>
    </route>
-   <!-- packet-uploader to packet-validator Route -->
-   <route id="packet-uploader-->packet-validator new route">
+   <route id="packet-uploader-->uin-generation new route">
       <from uri="eventbus://packet-uploader-new-bus-out" />
-      <log message="packet-uploader-->packet-validator new route ${bodyAs(String)}" />
+      <log message="packet-uploader-->uin-generation new route ${bodyAs(String)}" />
       <choice>
          <when>
             <jsonpath>$.[?(@['isValid'] == false &amp;&amp; @['internalError'] == true)]</jsonpath>
@@ -73,7 +72,7 @@
             <to uri="workflow-cmd://complete-as-failed" />
          </when>
          <otherwise>
-            <to uri="eventbus://packet-validator-bus-in" />
+            <to uri="eventbus://uin-generator-bus-in" />
          </otherwise>
       </choice>
    </route>
