@@ -16,7 +16,7 @@ String MALE = 'MLE';
 String FEMALE = 'FLE';
 String NonResident = "FR";
 String Resident = "NFR";
-String Others = "OTH";
+String Unknown = "OTH";
 String DATE_PATTERN = "yyyy/MM/dd";
 String regex = "^\\d{4}(\\/)(((0)[1-9])|((1)[0-2]))(\\/)([0-2][0-9]|(3)[0-1])$";
 Pattern pattern = Pattern.compile(regex);
@@ -117,13 +117,13 @@ def getApplicantType() {
     return "007";
   } else if (itc == Resident && genderType == FEMALE && ageCode == ADULT && !isBioExPresent) {
     return "008";
-  } else if (itc == NonResident && genderType == Others && ageCode == CHILD && !isBioExPresent) {
+  } else if (itc == NonResident && genderType == Unknown && ageCode == CHILD && !isBioExPresent) {
     return "005";
-  } else if (itc == NonResident && genderType == Others && ageCode == ADULT && !isBioExPresent) {
+  } else if (itc == NonResident && genderType == Unknown && ageCode == ADULT && !isBioExPresent) {
     return "006";
-  } else if (itc == Resident && genderType == Others && ageCode == CHILD && !isBioExPresent) {
+  } else if (itc == Resident && genderType == Unknown && ageCode == CHILD && !isBioExPresent) {
     return "007";
-  } else if (itc == Resident && genderType == Others && ageCode == ADULT && !isBioExPresent) {
+  } else if (itc == Resident && genderType == Unknown && ageCode == ADULT && !isBioExPresent) {
     return "008";
   } else if (itc == NonResident && genderType == MALE && ageCode == CHILD && isBioExPresent) {
     return "009";
@@ -141,13 +141,13 @@ def getApplicantType() {
     return "015";
   } else if (itc == Resident && genderType == FEMALE && ageCode == ADULT && isBioExPresent) {
     return "016";
-  } else if (itc == NonResident && genderType == Others && ageCode == CHILD && isBioExPresent) {
+  } else if (itc == NonResident && genderType == Unknown && ageCode == CHILD && isBioExPresent) {
     return "013";
-  } else if (itc == NonResident && genderType == Others && ageCode == ADULT && isBioExPresent) {
+  } else if (itc == NonResident && genderType == Unknown && ageCode == ADULT && isBioExPresent) {
     return "014";
-  } else if (itc == Resident && genderType == Others && ageCode == CHILD && isBioExPresent) {
+  } else if (itc == Resident && genderType == Unknown && ageCode == CHILD && isBioExPresent) {
     return "015";
-  } else if (itc == Resident && genderType == Others && ageCode == ADULT && isBioExPresent) {
+  } else if (itc == Resident && genderType == Unknown && ageCode == ADULT && isBioExPresent) {
     return "016";
   } 
     
@@ -163,9 +163,9 @@ def getApplicantType() {
     return "015";
   }
   
-  else if (itc == NonResident && genderType == Others && ageCode == MINOR && isBioExPresent) {
+  else if (itc == NonResident && genderType == Unknown && ageCode == MINOR && isBioExPresent) {
     return "014";
-  } else if (itc == Resident && genderType == Others && ageCode == MINOR && isBioExPresent) {
+  } else if (itc == Resident && genderType == Unknown && ageCode == MINOR && isBioExPresent) {
     return "015";
   }
   
@@ -181,9 +181,9 @@ def getApplicantType() {
     return "015";
   }
   
-  else if (itc == NonResident && genderType == Others && ageCode == MINOR && !isBioExPresent) {
+  else if (itc == NonResident && genderType == Unknown && ageCode == MINOR && !isBioExPresent) {
     return "014";
-  } else if (itc == Resident && genderType == Others && ageCode == MINOR && !isBioExPresent) {
+  } else if (itc == Resident && genderType == Unknown && ageCode == MINOR && !isBioExPresent) {
     return "015";
   }
   
