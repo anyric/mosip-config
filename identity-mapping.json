@@ -12,6 +12,9 @@
 		"otherNames": {
 			"value": "otherNames"
 		},
+		"name": {
+			"value": "surname givenNames otherNames"
+		},
 		"gender": {
 			"value": "gender"
 		},
