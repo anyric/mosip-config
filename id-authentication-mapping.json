@@ -1,7 +1,7 @@
 {
     "ida-mapping": {
         "surname": {
-			"value": "surName"
+			"value": "surname"
 		},
 		"givenNames": {
 			"value": "givenNames"
