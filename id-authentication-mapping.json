@@ -1,8 +1,14 @@
 {
     "ida-mapping": {
-        "name": [
-            "fullName"
-        ],
+        "surname": {
+			"value": "surName"
+		},
+		"givenNames": {
+			"value": "givenNames"
+		},
+		"otherNames": {
+			"value": "otherNames"
+		},
         "dob": [
             "dateOfBirth"
         ],
@@ -18,15 +24,24 @@
         "emailId": [
             "email"
         ],
-        "addressLine1": [
-            "addressLine1"
-        ],
-        "addressLine2": [
-            "addressLine2"
-        ],
-        "addressLine3": [
-            "addressLine3"
-        ],
+        "streetOfResidence": {
+			"value": "streetOfResidence"
+		},
+		"villageOfResidence": {
+			"value": "villageOfResidence"
+		},
+		"parishOfResidence": {
+			"value": "parishOfResidence"
+		},
+		"subcountyOfResidence": {
+			"value": "subcountyOfResidence"
+		},
+		"countyOfResidence": {
+			"value": "countyOfResidence"
+		},
+		"districtOfResidence": {
+			"value": "districtOfResidence"
+		},
         "location1": [
             "city"
         ],

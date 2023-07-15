@@ -3,8 +3,14 @@
 		"IDSchemaVersion": {
 			"value": "IDSchemaVersion"
 		},
-		"name": {
-			"value": "fullName"
+		"surname": {
+			"value": "surName"
+		},
+		"givenNames": {
+			"value": "givenNames"
+		},
+		"otherNames": {
+			"value": "otherNames"
 		},
 		"gender": {
 			"value": "gender"
@@ -69,14 +75,23 @@
 		"locationHierarchyForProfiling": {
 			"value": "zone,postalCode"
 		},
-		"addressLine1": {
-			"value": "addressLine1"
+		"streetOfResidence": {
+			"value": "streetOfResidence"
 		},
-		"addressLine2": {
-			"value": "addressLine2"
+		"villageOfResidence": {
+			"value": "villageOfResidence"
 		},
-		"addressLine3": {
-			"value": "addressLine3"
+		"parishOfResidence": {
+			"value": "parishOfResidence"
+		},
+		"subcountyOfResidence": {
+			"value": "subcountyOfResidence"
+		},
+		"countyOfResidence": {
+			"value": "countyOfResidence"
+		},
+		"districtOfResidence": {
+			"value": "districtOfResidence"
 		},
 		"location1": {
 			"value": "city"
