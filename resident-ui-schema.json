@@ -494,6 +494,168 @@
 			"preview": true
 		},
 		{
+			"id": "streetOfResidence",
+			"description": "Adresse de résidence",
+			"labelName": {
+				"fra": "Adresse de résidence",
+				"ara": "عنوان السكن",
+				"eng": "Street Of Residence",
+				"hin": "पता पंक्ति 1",
+				"kan": "ವಿಳಾಸ 1",
+				"tam": "முகவரி வரி 1"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?=.{0,100}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"visible": true,
+			"group": "address_info",
+			"preview": true
+		},
+		{
+			"id": "villageOfResidence",
+			"description": "Adresse de résidence",
+			"labelName": {
+				"fra": "Adresse de résidence",
+				"ara": "عنوان السكن",
+				"eng": "Village Of Residence",
+				"hin": "पता पंक्ति 1",
+				"kan": "ವಿಳಾಸ 1",
+				"tam": "முகவரி வரி 1"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?=.{0,100}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"visible": true,
+			"group": "address_info",
+			"preview": true
+		},
+		{
+			"id": "parishOfResidence",
+			"description": "Adresse de résidence",
+			"labelName": {
+				"fra": "Adresse de résidence",
+				"ara": "عنوان السكن",
+				"eng": "Parish Of Residence",
+				"hin": "पता पंक्ति 1",
+				"kan": "ವಿಳಾಸ 1",
+				"tam": "முகவரி வரி 1"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?=.{0,100}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"visible": true,
+			"group": "address_info",
+			"preview": true
+		},
+		{
+			"id": "subcountyOfResidence",
+			"description": "Adresse de résidence",
+			"labelName": {
+				"fra": "Adresse de résidence",
+				"ara": "عنوان السكن",
+				"eng": "Subcounty Of Residence",
+				"hin": "पता पंक्ति 1",
+				"kan": "ವಿಳಾಸ 1",
+				"tam": "முகவரி வரி 1"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?=.{0,100}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"visible": true,
+			"group": "address_info",
+			"preview": true
+		},
+		{
+			"id": "countyOfResidence",
+			"description": "Adresse de résidence",
+			"labelName": {
+				"fra": "Adresse de résidence",
+				"ara": "عنوان السكن",
+				"eng": "County Of Residence",
+				"hin": "पता पंक्ति 1",
+				"kan": "ವಿಳಾಸ 1",
+				"tam": "முகவரி வரி 1"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?=.{0,100}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"visible": true,
+			"group": "address_info",
+			"preview": true
+		},
+		{
+			"id": "districtOfResidence",
+			"description": "Adresse de résidence",
+			"labelName": {
+				"fra": "Adresse de résidence",
+				"ara": "عنوان السكن",
+				"eng": "District Of Residence",
+				"hin": "पता पंक्ति 1",
+				"kan": "ವಿಳಾಸ 1",
+				"tam": "முகவரி வரி 1"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?=.{0,100}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"visible": true,
+			"group": "address_info",
+			"preview": true
+		},
+		{
 			"id": "referenceCNIENumber",
 			"description": "CNIE",
 			"labelName": {
