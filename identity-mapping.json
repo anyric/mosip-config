@@ -142,7 +142,8 @@
 		}
 	},
 	"attributeUpdateCountLimit": {
-		"fullName": 2,
+		"surname": 2,
+		"givenNames": 2,
 		"gender": 1,
 		"dob": 1,
 		"age": 1

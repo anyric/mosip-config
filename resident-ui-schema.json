@@ -53,6 +53,81 @@
 			"transliteration": true
 		},
 		{
+			"id": "surname",
+			"description": "Enter surname",
+			"labelName": {
+				"eng": "Surname",
+				"ara": "الاسم الكامل",
+				"fra": "Nom complet",
+				"hin": "पूरा नाम",
+				"kan": "ಪೂರ್ಣ ಹೆಸರು",
+				"tam": "முழு பெயர்"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?!.*[ ]{4})(?=.{3,50}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"transliteration": true
+		},
+		{
+			"id": "givenNames",
+			"description": "Enter givenNames",
+			"labelName": {
+				"eng": "GivenNames",
+				"ara": "الاسم الكامل",
+				"fra": "Nom complet",
+				"hin": "पूरा नाम",
+				"kan": "ಪೂರ್ಣ ಹೆಸರು",
+				"tam": "முழு பெயர்"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?!.*[ ]{4})(?=.{3,50}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"transliteration": true
+		},
+		{
+			"id": "otherNames",
+			"description": "Enter otherNames",
+			"labelName": {
+				"eng": "OtherNames",
+				"ara": "الاسم الكامل",
+				"fra": "Nom complet",
+				"hin": "पूरा नाम",
+				"kan": "ಪೂರ್ಣ ಹೆಸರು",
+				"tam": "முழு பெயர்"
+			},
+			"controlType": "textbox",
+			"inputRequired": true,
+			"fieldType": "default",
+			"type": "simpleType",
+			"validators": [
+				{
+					"type": "regex",
+					"validator": "^(?!.*[ ]{4})(?=.{3,50}$).*",
+					"arguments": []
+				}
+			],
+			"required": true,
+			"transliteration": true
+		},
+		{
 			"id": "dateOfBirth",
 			"description": "Enter DOB",
 			"labelName": {

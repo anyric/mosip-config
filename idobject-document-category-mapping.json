@@ -3,6 +3,15 @@
     "fullName": {
       "documentCategory": "proofOfIdentity"
     },
+    "surname": {
+      "documentCategory": "proofOfIdentity"
+    },
+    "givenNames": {
+      "documentCategory": "proofOfIdentity"
+    },
+    "otherNames": {
+      "documentCategory": "proofOfIdentity"
+    },
     "parentOrGuardianRID": {
       "documentCategory" : "proofOfRelationship"
     },
@@ -19,6 +28,24 @@
       "documentCategory" : "proofOfAddress"
     },
     "addressLine3": {
+      "documentCategory" : "proofOfAddress"
+    },
+    "streetOfResidence": {
+      "documentCategory" : "proofOfAddress"
+    },
+    "villageOfResidence": {
+      "documentCategory" : "proofOfAddress"
+    },
+    "parishOfResidence": {
+      "documentCategory" : "proofOfAddress"
+    },
+    "subcountyOfResidence": {
+      "documentCategory" : "proofOfAddress"
+    },
+    "countyOfResidence": {
+      "documentCategory" : "proofOfAddress"
+    },
+    "districtOfResidence": {
       "documentCategory" : "proofOfAddress"
     },
     "region": {

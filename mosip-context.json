@@ -20,6 +20,30 @@
         "@id": "https://${mosip.api.public.host}/mosip#addressLine3",
         "@context": {"value": "rdf:value", "lang": "@language"}
     },
+    "streetOfResidence": {
+      "@id": "https://${mosip.api.public.host}/mosip#streetOfResidence",
+      "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "villageOfResidence": {
+        "@id": "https://${mosip.api.public.host}/mosip#villageOfResidence",
+        "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "parishOfResidence": {
+        "@id": "https://${mosip.api.public.host}/mosip#parishOfResidence",
+        "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "subcountyOfResidence": {
+      "@id": "https://${mosip.api.public.host}/mosip#subcountyOfResidence",
+      "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "countyOfResidence": {
+        "@id": "https://${mosip.api.public.host}/mosip#countyOfResidence",
+        "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "districtOfResidence": {
+        "@id": "https://${mosip.api.public.host}/mosip#districtOfResidence",
+        "@context": {"value": "rdf:value", "lang": "@language"}
+    },
     "city": {
         "@id": "https://${mosip.api.public.host}/mosip#city",
         "@context": {"value": "rdf:value", "lang": "@language"}
@@ -41,7 +65,25 @@
 
         "@context": {"value": "rdf:value", "lang": "@language"}
     },
-  "phone": "mosip:phone",
+    "surname": {
+
+      "@id": "https://${mosip.api.public.host}/mosip#surname",
+
+      "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "givenNames": {
+
+      "@id": "https://${mosip.api.public.host}/mosip#givenNames",
+
+      "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "otherNames": {
+
+    "@id": "https://${mosip.api.public.host}/mosip#otherNames",
+
+    "@context": {"value": "rdf:value", "lang": "@language"}
+    },
+    "phone": "mosip:phone",
     "postalCode": "mosip:postalCode",
     "province": {
 
