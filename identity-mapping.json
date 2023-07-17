@@ -12,11 +12,9 @@
 		"otherNames": {
 			"value": "otherNames"
 		},
-		"name": [
-            "surname",
-            "givenNames",
-			"otherNames"
-        ],
+		"name": { 
+			"value":"surname,givenNames,otherNames"
+		},
 		"gender": {
 			"value": "gender"
 		},
