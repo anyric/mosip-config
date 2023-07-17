@@ -112,7 +112,7 @@
 			"value": "zone"
 		},
 		"fullAddress": {
-			"value": "addressLine1,addressLine2,addressLine3,city,region,province,postalCode"
+			"value": "streetOfResidence,villageOfResidence,parishOfResidence,subcountyOfResidence,countyOfResidence,districtOfResidence,city,region,province,postalCode"
 		},
 		"bestTwoFingers": {
 			"value": "bestTwoFingers"
