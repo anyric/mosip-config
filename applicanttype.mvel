@@ -187,6 +187,11 @@ def getApplicantType() {
     return "015";
   }
   
+  else if (itc == NonResident && genderType == Unknown && ageCode == MINOR && !isBioExPresent) {
+    return "014";
+  } else if (itc == Resident && genderType == Unknown && ageCode == MINOR && !isBioExPresent) {
+    return "015";
+  }
   
-  return "000";
+  return "001";
 }
