@@ -1,14 +1,1 @@
-{
-    "subcountyOfResidence": "[{\\"language\\":\\"eng\\",\\"value\\":\\"KAMPALA CENTRAL DIVISION\\"}]",
-    "otherNames": "July",
-    "districtOfResidence": "[{\\"language\\":\\"eng\\",\\"value\\":\\"KAMPALA\\"}]",
-    "gender": "AAAGZRdkuZL07s-REk-fG-4IFgD1wfNbPpZP33eQJUZak1fyHM2GYQYhX18Jz16RTQ4VPeT-MMKyPCbdcQTYlJJ5ukIOLlNUZyN-v9ILnMo_rhr3H-gv3ppfHGVFY81BtMEV",
-    "surname": "Jane",
-    "givenNames": "May",
-    "countyOfResidence": "[{\\"language\\":\\"eng\\",\\"value\\":\\"KAMPALA CAPITAL CITY AUTHORITY\\"}]",
-    "dateOfBirth": "AAAGZUzfG8bCRY_JJhEdBFbSLTfOVxQioAFqMW24MoNSVU2bwlR1AZu8CjUMMI7CMgDV1Q_DKa3rVigrE6DX7hYVC0RvJY65uz0",
-    "streetOfResidence": "[{\\"language\\":\\"eng\\",\\"value\\":\\"Kampala\\"}]",
-    "villageOfResidence": "[{\\"language\\":\\"eng\\",\\"value\\":\\"CHURCH ZONE\\"}]",
-    "email": "AAAGZeiNksVkQn2ZhxMFNplhMIqc5ycZj3DGdoAWe0zTisj3y2TRKdHuULJjkzPSIpeWV5UrNugfhy6pV3a8UQw8Srhirq0lcHNi9acJ1cnSzH38SdLJ",
-    "parishOfResidence": "[{\\"language\\":\\"eng\\",\\"value\\":\\"BUKESA\\"}]"
-}
+Dear ${SURNAME}, Thank you for registering with Digital Identity platform . Your registration id is ""${RID}"". The demographic details are as follows: 1. Date: ${Date} 2. Full Name: ${SURNAME GIVENNAMES} 3. Date of Birth: ${DOB} 4. Gender: ${GENDER} 5. Address Line 1: ${VILLAGEOFRESIDENCE} 6. Address Line 2: ${PARISHOFRESIDENCE} 7. Address Line 3: ${SUBCOUNTYOFRESIDENCE} 8. Region: ${REGION} 9. City: ${CITY} 10. Province: ${PROVINCE} 11. Postal Code: ${POSTALCODE} 12. Mobile Number: ${PHONE} 13. Email: ${EMAIL}
