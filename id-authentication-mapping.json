@@ -11,8 +11,7 @@
 		},
         "name": [
             "surname",
-            "givenNames",
-			"otherNames"
+            "givenNames"
         ],
         "dob": [
             "dateOfBirth"
@@ -60,9 +59,12 @@
             "postalCode"
         ],
         "fullAddress": [
-            "addressLine1",
-            "addressLine2",
-            "addressLine3",
+            "streetOfResidence",
+            "villageOfResidence",
+            "parishOfResidence",
+            "subcountyOfResidence",
+            "countyOfResidence",
+            "districtOfResidence",
             "city",
             "region",
             "province",
