@@ -1,1 +1,240 @@
-Dear ${SURNAME}, Thank you for registering with Digital Identity platform . Your registration id is ""${RID}"". The demographic details are as follows: 1. Date: ${Date} 2. Full Name: ${SURNAME GIVENNAMES} 3. Date of Birth: ${DOB} 4. Gender: ${GENDER} 5. Address Line 1: ${VILLAGEOFRESIDENCE} 6. Address Line 2: ${PARISHOFRESIDENCE} 7. Address Line 3: ${SUBCOUNTYOFRESIDENCE} 8. Region: ${REGION} 9. City: ${CITY} 10. Province: ${PROVINCE} 11. Postal Code: ${POSTALCODE} 12. Mobile Number: ${PHONE} 13. Email: ${EMAIL}
+{
+    "dataSharePolicies": {
+      "typeOfShare": "direct",
+      "validForInMinutes": "30",
+      "transactionsAllowed": "2",
+      "encryptionType": "Partner Based",
+      "shareDomain": "datashare.datashare",
+      "source": "ID Repository"
+    },
+    "shareableAttributes": [
+      {
+        "attributeName": "surname",
+        "source": [
+          {
+            "attribute": "surname",
+            "filter": [
+              {
+                "language": "eng"
+              }
+            ]
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "givenNames",
+        "source": [
+          {
+            "attribute": "givenNames",
+            "filter": [
+              {
+                "language": "eng"
+              }
+            ]
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "otherNames",
+        "source": [
+          {
+            "attribute": "otherNames",
+            "filter": [
+              {
+                "language": "eng"
+              }
+            ]
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "dateOfBirth",
+        "source": [
+          {
+            "attribute": "dateOfBirth"
+          }
+        ],
+        "encrypted": false,
+        "format": "YYYY"
+      },
+      {
+        "attributeName": "gender",
+        "source": [
+          {
+            "attribute": "gender"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "phone",
+        "source": [
+          {
+            "attribute": "phone"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "email",
+        "source": [
+          {
+            "attribute": "email"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "addressLine1",
+        "source": [
+          {
+            "attribute": "addressLine1"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "addressLine2",
+        "source": [
+          {
+            "attribute": "addressLine2"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "addressLine3",
+        "source": [
+          {
+            "attribute": "addressLine3"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "streetOfResidence",
+        "source": [
+          {
+            "attribute": "streetOfResidence"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "villageOfResidence",
+        "source": [
+          {
+            "attribute": "villageOfResidence"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "parishOfResidence",
+        "source": [
+          {
+            "attribute": "parishOfResidence"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "subcountyOfResidence",
+        "source": [
+          {
+            "attribute": "subcountyOfResidence"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "countyOfResidence",
+        "source": [
+          {
+            "attribute": "countyOfResidence"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "districtOfResidence",
+        "source": [
+          {
+            "attribute": "districtOfResidence"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "region",
+        "source": [
+          {
+            "attribute": "region"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "province",
+        "source": [
+          {
+            "attribute": "province"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "city",
+        "source": [
+          {
+            "attribute": "city"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "UIN",
+        "source": [
+          {
+            "attribute": "UIN"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "postalCode",
+        "source": [
+          {
+            "attribute": "postalCode"
+          }
+        ],
+        "encrypted": false
+      },
+      {
+        "attributeName": "biometrics",
+        "group": "CBEFF",
+        "source": [
+          {
+            "attribute": "individualBiometrics",
+            "filter": [
+              {
+                "type": "Face"
+              },
+              {
+                "type": "Finger",
+                "subType": [
+                  "Left Thumb",
+                  "Right Thumb"
+                ]
+              }
+            ]
+          }
+        ],
+        "encrypted": true,
+        "format": "extraction"
+      }
+    ]
+  }
