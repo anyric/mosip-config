@@ -1,0 +1,99 @@
+{
+    "authTokenType": "partner",
+    "allowedKycAttributes": [
+      {
+        "attributeName": "surname"
+      },
+      {
+        "attributeName": "givenNames"
+      },
+      {
+        "attributeName": "otherNames"
+      },
+      {
+        "attributeName": "gender"
+      },
+      {
+        "attributeName": "residenceStatus"
+      },
+      {
+        "attributeName": "dateOfBirth"
+      },
+      {
+        "attributeName": "photo"
+      },
+      {
+        "attributeName": "addressLine1"
+      },
+      {
+        "attributeName": "streetOfResidence"
+      },
+      {
+        "attributeName": "villageOfResidence"
+      },
+      {
+        "attributeName": "parishOfResidence"
+      },
+      {
+        "attributeName": "subcountyOfResidence"
+      },
+      {
+        "attributeName": "countyOfResidence"
+      },
+      {
+        "attributeName": "districtOfResidence"
+      },
+      {
+        "attributeName": "District"
+      },
+      {
+        "attributeName": "County"
+      },
+      {
+        "attributeName": "Sub-county"
+      },
+      {
+        "attributeName": "Parish"
+      },
+      {
+        "attributeName": "Village"
+      }
+    ],
+    "allowedAuthTypes": [
+      {
+        "authSubType": "IRIS",
+        "authType": "bio",
+        "mandatory": false
+      },
+      {
+        "authSubType": "FINGER",
+        "authType": "bio",
+        "mandatory": false
+      },
+      {
+        "authSubType": "FACE",
+        "authType": "bio",
+        "mandatory": false
+      },
+      {
+        "authSubType": "",
+        "authType": "otp",
+        "mandatory": false
+      },
+      {
+        "authSubType": "",
+        "authType": "otp-request",
+        "mandatory": false
+      },
+      {
+        "authSubType": "",
+        "authType": "kyc",
+        "mandatory": false
+      },
+      {
+        "authSubType": "",
+        "authType": "demo",
+        "mandatory": false
+      }
+    ]
+  }
