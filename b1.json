@@ -1,0 +1,761 @@
+{
+    "identity": {
+      "identity": [
+        {
+          "id": "IDSchemaVersion",
+          "description": "ID Schema Version",
+          "type": "number",
+          "controlType": null,
+          "fieldType": "default",
+          "inputRequired": false,
+          "validators": [],
+          "required": true
+        },
+        {
+          "id": "fullName",
+          "description": "Enter Full Name",
+          "labelName": {
+            "eng": "Full Name lost",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": true,
+          "transliteration": true
+        },
+        {
+          "id": "maidenName",
+          "description": "Enter Previous or maiden names (if any)",
+          "labelName": {
+            "eng": "Previous or maiden names (if any)",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "dateOfBirth",
+          "description": "Enter DOB",
+          "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+          },
+          "controlType": "ageDate",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "string",
+          "validators": [],
+          "required": true
+        },
+        {
+          "id": "gender",
+          "description": "Enter Gender",
+          "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "dynamic",
+          "subType": "gender",
+          "type": "simpleType",
+          "validators": [],
+          "required": true
+        },
+        {
+          "id": "residenceStatus",
+          "description": "Residence status",
+          "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "dynamic",
+          "subType": "residenceStatus",
+          "type": "simpleType",
+          "validators": [],
+          "required": true
+        },
+        {
+          "id": "addressLine1",
+          "description": "addressLine1",
+          "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": true,
+          "transliteration": true
+        },
+        {
+          "id": "addressLine2",
+          "description": "addressLine2",
+          "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "addressLine3",
+          "description": "addressLine3",
+          "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "region",
+          "description": "region",
+          "labelName": {
+            "eng": "District",
+            "ara": "منطقة",
+            "fra": "Région"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "parentLocCode": "UGA",
+          "locationHierarchyLevel": 1,
+          "required": true
+        },
+        {
+          "id": "province",
+          "description": "province",
+          "labelName": {
+            "eng": "County",
+            "ara": "المحافظة",
+            "fra": "Province"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "locationHierarchyLevel": 2,
+          "required": true
+        },
+        {
+          "id": "city",
+          "description": "city",
+          "labelName": {
+            "eng": "Sub-county",
+            "ara": "مدينة",
+            "fra": "Ville"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "locationHierarchyLevel": 3,
+          "required": true
+        },
+        {
+          "id": "zone",
+          "description": "zone",
+          "labelName": {
+            "eng": "Parish",
+            "ara": "منطقة",
+            "fra": "Zone"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [],
+          "locationHierarchyLevel": 4,
+          "required": true
+        },
+        {
+          "id": "postalCode",
+          "description": "postalCode",
+          "labelName": {
+            "eng": "Village",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+          },
+          "controlType": "dropdown",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "string",
+          "validators": [],
+          "locationHierarchyLevel": 5,
+          "required": true
+        },
+        {
+          "id": "indeginousCommunity",
+          "description": "Indigenous community to which applicant belongs",
+          "labelName": {
+            "eng": "Indigenous community to which applicant belongs",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "clan",
+          "description": "Clan (where applicable)",
+          "labelName": {
+            "eng": "Clan (where applicable)",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "postalAddress",
+          "description": "Postal address",
+          "labelName": {
+            "eng": "Postal address",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,100}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "occupation",
+          "description": "Occupation",
+          "labelName": {
+            "eng": "Occupation",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "profession",
+          "description": "Profession",
+          "labelName": {
+            "eng": "Profession",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "spouseName",
+          "description": "Name of spouse (where applicable)",
+          "labelName": {
+            "eng": "Name of spouse (where applicable)",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "heightOfApplicant",
+          "description": "Height of applicant",
+          "labelName": {
+            "eng": "Height of applicant",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "colourOfEyes",
+          "description": "Colour of eyes",
+          "labelName": {
+            "eng": "Colour of eyes",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "colourOfHair",
+          "description": "Colour of hair",
+          "labelName": {
+            "eng": "Colour of hair",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "bloodGroup",
+          "description": "Applicant's blood group",
+          "labelName": {
+            "eng": "Applicant's blood group",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,20}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "drivingLicenseNumber",
+          "description": "Driving license number",
+          "labelName": {
+            "eng": "Driving license number",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "tin",
+          "description": "Tax identification number",
+          "labelName": {
+            "eng": "Tax identification number",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "phone",
+          "description": "phone",
+          "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "string",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^([0-9]{1})([0-9]{9})$",
+              "arguments": []
+            }
+          ],
+          "required": true
+        },
+        {
+          "id": "email",
+          "description": "email",
+          "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "string",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+              "arguments": []
+            }
+          ],
+          "required": true
+        },
+        {
+          "id": "fathersNameAndBirthPlace",
+          "description": "Father's names and place of birth (give particulars of clan)",
+          "labelName": {
+            "eng": "Father's names and place of birth (give particulars of clan)",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "mothersNameAndBirthPlace",
+          "description": "Mother's names and place of birth (give particulars of clan)",
+          "labelName": {
+            "eng": "Mother's names and place of birth (give particulars of clan)",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "previousNationality",
+          "description": "Previous nationality (if any) (attach proof of renunciation)",
+          "labelName": {
+            "eng": "Previous nationality (if any) (attach proof of renunciation)",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "contemporaryDescendant1",
+          "description": "Contemporary descendant 1",
+          "labelName": {
+            "eng": "Contemporary descendant 1",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "contemporaryDescendant2",
+          "description": "Contemporary descendant 2",
+          "labelName": {
+            "eng": "Contemporary descendant 2",
+            "ara": "",
+            "fra": ""
+          },
+          "controlType": "textbox",
+          "inputRequired": true,
+          "fieldType": "default",
+          "type": "simpleType",
+          "validators": [
+            {
+              "type": "regex",
+              "validator": "^(?=.{0,50}$).*",
+              "arguments": []
+            }
+          ],
+          "required": false,
+          "transliteration": true
+        },
+        {
+          "id": "proofOfAddress",
+          "description": "proofOfAddress",
+          "labelName": {
+            "ara": "إثبات العنوان",
+            "fra": "Address Proof",
+            "eng": "Address Proof"
+          },
+          "controlType": "fileupload",
+          "inputRequired": true,
+          "validators": [],
+          "subType": "POA",
+          "required": false
+        },
+        {
+          "id": "proofOfIdentity",
+          "description": "proofOfIdentity",
+          "labelName": {
+            "ara": "إثبات الهوية",
+            "fra": "Identity Proof",
+            "eng": "Identity Proof"
+          },
+          "controlType": "fileupload",
+          "inputRequired": true,
+          "validators": [],
+          "subType": "POI",
+          "required": true
+        },
+        {
+          "id": "proofOfRelationship",
+          "description": "proofOfRelationship",
+          "labelName": {
+            "ara": "إثبات العلاقة",
+            "fra": "Relationship Proof",
+            "eng": "Relationship Proof"
+          },
+          "controlType": "fileupload",
+          "inputRequired": true,
+          "validators": [],
+          "subType": "POR",
+          "required": true
+        },
+        {
+          "id": "proofOfDateOfBirth",
+          "description": "proofOfDateOfBirth",
+          "labelName": {
+            "ara": "دليل DOB",
+            "fra": "DOB Proof",
+            "eng": "DOB Proof"
+          },
+          "controlType": "fileupload",
+          "inputRequired": true,
+          "validators": [],
+          "subType": "POB",
+          "required": true
+        },
+        {
+          "id": "proofOfException",
+          "description": "proofOfException",
+          "labelName": {
+            "ara": "إثبات الاستثناء",
+            "fra": "Exception Proof",
+            "eng": "Exception Proof"
+          },
+          "controlType": "fileupload",
+          "inputRequired": true,
+          "validators": [],
+          "subType": "POE",
+          "required": true
+        },
+        {
+          "id": "proofOfException-1",
+          "description": "proofOfException",
+          "labelName": {
+            "ara": "إثبات الاستثناء 2",
+            "fra": "Exception Proof",
+            "eng": "Exception Proof"
+          },
+          "controlType": "fileupload",
+          "inputRequired": true,
+          "validators": [],
+          "subType": "POE",
+          "required": true
+        }
+      ],
+      "locationHierarchy": [
+        "region",
+        "province",
+        "city",
+        "zone",
+        "postalCode"
+      ]
+    }
+  }
