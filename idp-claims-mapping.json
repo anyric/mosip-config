@@ -1,8 +1,17 @@
 {
   "idp-claims-mapping": {
-    "name": {
-      "attributeName": "fullName"
-    },
+    "surname": {
+			"value": "surname"
+		},
+		"givenNames": {
+			"value": "givenNames"
+		},
+		"otherNames": {
+			"value": "otherNames"
+		},
+		"name": { 
+			"value":"surname,givenNames"
+		},
     "gender": {
       "attributeName":  "gender"
     },
