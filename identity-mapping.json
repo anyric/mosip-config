@@ -116,6 +116,21 @@
 		},
 		"bestTwoFingers": {
 			"value": "bestTwoFingers"
+		},
+		"address": {
+			"value": "streetOfResidence,villageOfResidence,parishOfResidence,subcountyOfResidence,countyOfResidence,districtOfResidence,city,region,province,postalCode"
+		},
+		"birthdate": {
+			"value": "dateOfBirth"
+		},
+		"phone_number": {
+			"value": "phone"
+		},
+		"picture": {
+			"value": "face"
+		},
+		"individual_id": {
+			"value": "individual_id"
 		}
 	},
 	"metaInfo": {
