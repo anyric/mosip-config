@@ -21,7 +21,7 @@
     "email": {
       "attributeName":  "email"
     },
-    "phone_number": {
+    "phone": {
       "attributeName":  "phone"
     },
     "picture": {
