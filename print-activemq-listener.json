@@ -7,6 +7,6 @@
         "userName": "artemis",
         "password": "p68THErpDC",
         "typeOfQueue": "ACTIVEMQ",
-        "inboundMessageTTL": 2700
+        "inboundMessageTTL": 5400
     }]
 }
